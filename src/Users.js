@@ -22,12 +22,11 @@ function Users() {
         <div>
             {users.map((user) => {
                 return (
-                    <div class="card">
-                        {" "}
-                        <div class="container">
-                            <h1>Name: {user.Name}</h1>
-                            <h1>Age: {user.Age}</h1>
-                        </div>
+                    <div class = "card">
+                        
+                        <h1>Name: {user.Name}</h1>
+                        <h1>Age: {user.Age}</h1>
+                        
                     </div>
                 )
             })}
