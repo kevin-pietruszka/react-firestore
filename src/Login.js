@@ -4,6 +4,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "./firebase";
+import "./login.css";
 
 const Login = () => {
   const [registerEmail, setRegisterEmail] = useState("");
@@ -43,8 +44,8 @@ const Login = () => {
   };
 
   return (
-    <div className="App">
-      <div>
+    <div className="loginpage">
+      <div className="card">
         <h3> Register User </h3>
         <input
           placeholder="Email..."
@@ -58,11 +59,12 @@ const Login = () => {
             setRegisterPassword(event.target.value);
           }}
         />
-
-        <button onClick={register}> Create User</button>
+        <div>
+          <button onClick={register}> Create User</button>
+        </div>
       </div>
 
-      <div>
+      <div className="card">
         <h3> Login </h3>
         <input
           placeholder="Email..."
@@ -76,8 +78,9 @@ const Login = () => {
             setLoginPassword(event.target.value);
           }}
         />
-
-        <button onClick={login}> Login</button>
+        <div>
+          <button onClick={login}> Login</button>
+        </div>
       </div>
     </div>
   );
