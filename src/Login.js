@@ -15,6 +15,7 @@ const Login = () => {
 
     if (!registerEmail.includes("@gatech.edu")) {
         alert("Must be a gatech email");
+        return;
     }
 
     try {
