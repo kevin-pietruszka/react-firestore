@@ -1,10 +1,16 @@
-import './App.css';
-import Users from './Users';
+import "./App.css";
+import Users from "./Users";
 
 function App() {
   return (
     <div className="App">
-      <Users> </Users>
+      <div className="toolBar">
+        
+      </div>
+
+      <div className="users">
+        <Users> </Users>
+      </div>
     </div>
   );
 }
