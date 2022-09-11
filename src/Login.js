@@ -12,10 +12,9 @@ const Login = () => {
   const [loginPassword, setLoginPassword] = useState("");
 
   const register = async () => {
-
     if (!registerEmail.includes("@gatech.edu")) {
-        alert("Must be a gatech email");
-        return;
+      alert("Must be a gatech email");
+      return;
     }
 
     try {

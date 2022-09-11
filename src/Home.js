@@ -4,10 +4,9 @@ import { signOut } from "firebase/auth";
 import { auth } from "./firebase";
 
 const Home = () => {
-
-    const logout = async () => {
-        await signOut(auth);
-    }
+  const logout = async () => {
+    await signOut(auth);
+  };
 
   return (
     <div className="App">
@@ -24,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home
+export default Home;
